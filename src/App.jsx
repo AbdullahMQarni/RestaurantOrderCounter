@@ -1,11 +1,17 @@
 import './App.css';
+import Header from './components/Header'
+import Counter from './components/Counter'
+import OrderDetails from './components/OrderDetails';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Restaurant Order Counter App</h1>
-      <h2>Coming Soon...</h2>
-    </div>
+    <>
+      <Header />
+      <div className="App">
+        <Counter/>
+        <OrderDetails />
+      </div>
+    </>
   );
 }
 
