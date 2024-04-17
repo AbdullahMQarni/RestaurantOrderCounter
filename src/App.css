@@ -1,38 +1,125 @@
-.App {
+*{
+  font-family: 'fira code';
+  background-color: #F5EAD7;
+  color: #4A2C2A;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  min-height: 50vh;
+  gap: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header */
+
+.test-Logo{
+  color: #E97451;
+}
+
+.logo{
+  height: 200px;
+  width: auto;
+  margin-bottom: -40px;
+}
+
+/* Counter jsx */
+
+/* Container styling */
+div.box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+  background-color: #F5EAD7; /* Warm Cream */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 200px;
+  margin: 20px auto;
+}
+
+/* Styling for the number display box */
+div.number-box {
+  font-size: 2em;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #FFFFFF; /* Pure White for contrast */
+  border: none;
+  border-radius: 4px;
+  color: #4A2C2A; /* Espresso Brown */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Button styling */
+button {
+  background-color: #E97451; /* Burnt Sienna */
   color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #CC5C3E; /* Darker shade of Burnt Sienna */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button:active {
+  transform: scale(0.98); /* Slightly shrink buttons when clicked */
+}
+
+/* Styling for the heading */
+h3 {
+  color: #4A2C2A; /* Espresso Brown */
+  font-size: 1.5em;
+}
+
+/* Overall styling for alignment and spacing */
+div {
+  text-align: center;
+}
+
+.vertical{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  border-radius: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.21);
+  padding: 0px 10px;
+}
+
+#warning{
+  color: #a23b1f;
+  background-color: rgba(128, 128, 128, 0.171);
+  padding: 18px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.267);
+}
+
+#order-title{
+  font-weight: bold;
+  color: #CC5C3E;
+  font-size: larger;
+}
+
+@media screen and (max-width: 768px) {
+
+  .App{
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
 }
