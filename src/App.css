@@ -3,7 +3,12 @@
   background-color: #F5EAD7;
   color: #4A2C2A;
   text-align: center;
+}
 
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App {
@@ -12,7 +17,7 @@
   align-items: center;
   flex-direction: row;
   min-height: 50vh;
-  gap: 20px;
+  gap: 100px;
 }
 
 /* Header */
@@ -85,4 +90,36 @@ h3 {
 /* Overall styling for alignment and spacing */
 div {
   text-align: center;
+}
+
+.vertical{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  border-radius: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.21);
+  padding: 0px 10px;
+}
+
+#warning{
+  color: #a23b1f;
+  background-color: rgba(128, 128, 128, 0.171);
+  padding: 18px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.267);
+}
+
+#order-title{
+  font-weight: bold;
+  color: #CC5C3E;
+  font-size: larger;
+}
+
+@media screen and (max-width: 768px) {
+
+  .App{
+    flex-direction: column;
+  }
+  
 }
